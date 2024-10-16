@@ -1,0 +1,16 @@
+version: '1.0'
+services:
+  rkn-rename:
+    image: your-image-name # Replace with the actual image name
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN}
+      API_ID: ${API_ID}
+      API_HASH: ${API_HASH}
+      WEBHOOK: "True"
+      ADMIN: ${ADMIN}
+      DB_URL: ${DB_URL}
+      DB_NAME: "Rkn-Developer"
+      FORCE_SUB: ${FORCE_SUB}
+      START_PIC: ${START_PIC}
+      LOG_CHANNEL: "You Dont Need LogChannel To Remove This Variable"
+    command: python bot.py
